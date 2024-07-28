@@ -1,20 +1,20 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 let firstName = 'Papa Dienou';
-console.log( firstName );
+console.log(firstName);
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'Faye';
-console.log( lastName );
+console.log(lastName);
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 let fullName = 'Papa Dienou Faye';
-console.log( 'Papa Dienou', lastName);
+console.log('Papa Dienou', lastName);
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber = 7;
-console.log( 'luckyNumber:', 7 );
+console.log('luckyNumber:', 7);
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -22,51 +22,50 @@ console.log( 'luckyNumber:', 7 );
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
 let introduction = 'This is an introduction containing my full name and my lucky number';
-console.log( introduction );
-introduction = ' My name is ' + fullName  + ' and i think ' + luckyNumber + ' is a winner! ';
-console.log( introduction );
+console.log(introduction);
+introduction = ' My name is ' + fullName + ' and i think ' + luckyNumber + ' is a winner! ';
+console.log(introduction);
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
 let adventurous = true;
-console.log( 'adventurous:', true );
+console.log('adventurous:', true);
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
 let food = 'Mafé';
-console.log( food );
+console.log(food);
 food = 'Mafé';
-console.log( 'My favourite food is',food);
+console.log('My favourite food is', food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
 let pets = 1;
-console.log( pets );
+console.log(pets);
 pets = 1;
-console.log( 'I have', + pets + ' pet ' );
+console.log('I have', + pets + ' pet ');
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 2;
-console.log( friendsPets );
+console.log(friendsPets);
 friendsPets = 2;
-console.log( 'My friend have ', + friendsPets + ' pets ' );
+console.log('My friend have ', + friendsPets + ' pets ');
 // 10 - Add two pets to your `pets` variable
 pets += 2;
-console.log( pets );
+console.log(pets);
 pets = 3;
-console.log( 'I bought a dog and another cat, so now i have ' + pets + ' pets ' )
+console.log('I bought a dog and another cat, so now i have ' + pets + ' pets ')
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 5;
-console.log( allowedPets );
+console.log(allowedPets);
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result= true||false;
-if ( 'adventurous == true' )
-  {
-  console.log( 'Adventures are great!' );
+let result = true || false;
+if ('adventurous == true') {
+  console.log('Adventures are great!');
 }
-else { 
-  console.log( ' How about we stay home? ');
+else {
+  console.log(' How about we stay home? ');
 
 }
 
@@ -77,13 +76,13 @@ else {
 //      Console log the value of `diceRoll`
 let diceRoll = 'Try again later.';
 
-if( luckyNumber === 2 && adventurous === true ){
+if (luckyNumber === 2 && adventurous === true) {
 
-    console.log( 'Roll the dice!',);
+  console.log('Roll the dice!',);
 }
 
 else {
-  console.log( diceRoll );
+  console.log(diceRoll);
 }
 
 
@@ -98,16 +97,20 @@ else {
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 let petStatus;
 
-if(pets < allowedPets){
-  console.log( 'I can have more pets' );
+if (pets < allowedPets) {
+  petStatus = 'I can have more pets';
+
+  console.log('I can have more pets');
 }
-else if( pets === allowedPets){
-  console.log( ' I have enough pets ');
+else if (pets === allowedPets) {
+  petStatus = 'I have enough pets';
+  console.log(' I have enough pets ');
 }
-else if( pets > allowedPets ){
-  console.log( 'Oh no, I have too many pets!' );
+else if (pets > allowedPets) {
+  petStatus = 'Oh no, I have too many pets!';
+  console.log('Oh no, I have too many pets!');
 }
-  
+
 
 
 // STRETCH GOALS:
@@ -118,14 +121,12 @@ else if( pets > allowedPets ){
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
-let mostPets = pets||friendsPets;
+let mostPets = pets || friendsPets;
 
-if (pets > friendsPets)
-{
-  console.log( mostPets = pets );
+if (pets > friendsPets) {
+  console.log(mostPets = pets);
 }
-else if (pets < friendsPets)
-{
+else if (pets < friendsPets) {
   console.log(mostPets = friendsPets);
 }
 
@@ -140,31 +141,30 @@ else if (pets < friendsPets)
 
 let luckyResult;
 
-switch (luckyNumber) 
-{
+switch (luckyNumber) {
 
-case 1:
- alert( 'First is the worst');
-  break;
+  case 1:
+    alert('First is the worst');
+    break;
 
   case 2:
-  alert( 'Second is the best' );
-  break;
+    alert('Second is the best');
+    break;
 
   case 3:
-alert( 'Third is the one with the polka dot dress' );
-  break;
+    alert('Third is the one with the polka dot dress');
+    break;
 
-default:
- alert( 'Luck is what happens when preparation meets opportunity');
+  default:
+    alert('Luck is what happens when preparation meets opportunity');
 }
 
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
-result= true||false;{
-result= true||false? 
- "Adventures are great!" : "How about we stay home?";
+result = true || false; {
+  result = true || false ?
+    "Adventures are great!" : "How about we stay home?";
   console.log(result);
 }
 
