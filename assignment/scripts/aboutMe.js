@@ -75,15 +75,15 @@ else {
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-let diceRoll = 'try again later.';
+let diceRoll = 'Try again later.';
 
-if( 'luckyNumber == 2' && 'adventurous == true' )
-  {
-    console.log( 'Roll the dice!');
+if( luckyNumber === 2 && adventurous === true ){
+
+    console.log( 'Roll the dice!',);
 }
 
 else {
-  console.log( 'try again later', diceRoll );
+  console.log( diceRoll );
 }
 
 
@@ -96,18 +96,15 @@ else {
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = undefined;
+let petStatus;
 
-if(pets < allowedPets)
-{
+if(pets < allowedPets){
   console.log( 'I can have more pets' );
 }
-else if( pets === allowedPets)
-{
+else if( pets === allowedPets){
   console.log( ' I have enough pets ');
 }
-else if( pets > allowedPets )
-{
+else if( pets > allowedPets ){
   console.log( 'Oh no, I have too many pets!' );
 }
   
@@ -123,7 +120,7 @@ else if( pets > allowedPets )
 
 let mostPets = pets||friendsPets;
 
-if (pets >friendsPets)
+if (pets > friendsPets)
 {
   console.log( mostPets = pets );
 }
@@ -141,7 +138,7 @@ else if (pets < friendsPets)
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 
-let luckyResult = undefined ;
+let luckyResult;
 
 switch (luckyNumber) 
 {
